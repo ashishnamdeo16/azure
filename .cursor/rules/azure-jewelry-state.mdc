@@ -1,0 +1,40 @@
+---
+description: Current Azure Jewelry website state and conventions
+alwaysApply: true
+---
+
+# Azure Jewelry — Current Project State
+
+Luxury static catalog site (Next.js App Router + TypeScript + Tailwind v4). **No cart, checkout, or accounts** — conversion is WhatsApp/phone inquiry.
+
+## Key paths
+
+- Config: `src/data/site.ts` (contact, nav, brand)
+- Products: `src/data/products.ts` (add pieces here; images in `public/images/`)
+- WhatsApp helpers: `src/lib/whatsapp.ts`
+- Layout shell: `src/components/Header.tsx`, `Footer.tsx`, `MobileContactBar.tsx`
+- Homepage sections: `src/components/sections/*`
+- Pages: `/`, `/collections`, `/pieces/[slug]`
+
+## Design system
+
+- Colors: midnight azure, ivory, champagne/gold accent, charcoal (CSS vars in `globals.css`)
+- Fonts: Cormorant Garamond (serif) + Outfit (sans)
+- Tone: editorial atelier — not Shopify/template jewelry
+- Use attached product photos only; do not invent certifications, prices, or business facts
+
+## Contact behavior
+
+- WhatsApp messages pre-fill with product name via `getWhatsAppUrl(productName)`
+- WhatsApp number in `site.contact.whatsapp` should be digits-only with country code for `wa.me`
+- Mobile: fixed bottom WhatsApp | Call bar; hamburger + centered logo + Inquire
+- Homepage front follows a Zales-like structure: campaign hero, circular Shop by Category, two Featured shops
+- Type scale: `.type-hero` (campaign), `.type-section` (~28–32px), `.type-subhead`, `.type-category` (14px), `.type-nav` (14px), `.type-body` (15px)
+- Conversion remains WhatsApp/phone inquiry — no cart or checkout
+
+## SEO
+
+- Helpers: `src/lib/seo.ts` (Organization, WebSite, Product, Breadcrumb JSON-LD)
+- Crawl: `src/app/sitemap.ts`, `src/app/robots.ts`
+- Per-page metadata + canonicals on `/`, `/collections`, `/pieces/[slug]`
+- Do not invent prices, reviews, or fake InStock claims in schema
