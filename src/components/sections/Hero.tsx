@@ -5,7 +5,15 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-const campaigns = [
+const campaigns: {
+  id: string;
+  image: string;
+  alt: string;
+  title: string;
+  cta: string;
+  href: string;
+  focal?: string;
+}[] = [
   {
     id: "soleil",
     image: "/images/ring-soleil.png",
@@ -83,6 +91,7 @@ export function Hero() {
               "object-cover object-center",
               i === index && "hero-image"
             )}
+            style={{ objectPosition: campaign.focal ?? "center" }}
           />
           <div
             className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/25 to-transparent"

@@ -18,6 +18,7 @@ type MegaItem = {
     title: string;
     href: string;
     caption: string;
+    focal?: string;
   };
   links?: readonly MegaLink[];
 };
@@ -296,6 +297,7 @@ function MegaPanel({
               fill
               sizes="50vw"
               className="img-zoom object-cover"
+              style={{ objectPosition: item.featured.focal ?? "center" }}
             />
             <div
               className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent"

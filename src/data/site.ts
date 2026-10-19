@@ -31,6 +31,7 @@ export const siteConfig = {
 
   nav: [
     { label: "Rings", href: "/collections?category=Rings" },
+    { label: "Necklaces", href: "/collections?category=Necklaces" },
     { label: "Bracelets", href: "/collections?category=Bracelets" },
     { label: "Gemstones", href: "/#gemstones" },
     { label: "Custom", href: "/#contact" },
@@ -51,9 +52,27 @@ export const siteConfig = {
       links: [
         { label: "All Rings", href: "/collections?category=Rings" },
         { label: "Soleil Dome Ring", href: "/pieces/soleil-dome-ring" },
+        { label: "Champagne Halo Ring", href: "/pieces/champagne-halo-ring" },
+        { label: "Wave Pavé Ring", href: "/pieces/wave-pave-ring" },
         { label: "Emerald Cascade Band", href: "/pieces/emerald-cascade-band" },
         { label: "Tricolor Gemstone Band", href: "/pieces/tricolor-gemstone-band" },
         { label: "Magenta Pavé Band", href: "/pieces/magenta-pave-band" },
+      ],
+    },
+    {
+      label: "Necklaces",
+      href: "/collections?category=Necklaces",
+      featured: {
+        image: "/images/necklace-diamond-line.jpg",
+        title: "Diamond Line Necklace",
+        href: "/pieces/diamond-line-necklace",
+        caption: "A line of round diamonds",
+        focal: "center 28%",
+      },
+      links: [
+        { label: "All Necklaces", href: "/collections?category=Necklaces" },
+        { label: "Spectrum Pear Necklace", href: "/pieces/spectrum-pear-necklace" },
+        { label: "Diamond Line Necklace", href: "/pieces/diamond-line-necklace" },
       ],
     },
     {
@@ -81,6 +100,8 @@ export const siteConfig = {
       },
       links: [
         { label: "Diamond", href: "/collections?gemstone=Diamond" },
+        { label: "Champagne Diamond", href: "/collections?gemstone=Champagne+Diamond" },
+        { label: "Fancy Color Diamond", href: "/collections?gemstone=Fancy+Color+Diamond" },
         { label: "Sapphire & Diamond", href: "/collections?gemstone=Sapphire+%26+Diamond" },
         { label: "Emerald", href: "/collections?gemstone=Emerald" },
         { label: "Pink Sapphire", href: "/collections?gemstone=Pink+Sapphire" },

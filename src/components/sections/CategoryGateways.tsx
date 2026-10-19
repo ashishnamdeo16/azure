@@ -2,12 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 
-const categories = [
+const categories: {
+  name: string;
+  href: string;
+  image: string;
+  alt: string;
+  focal?: string;
+}[] = [
   {
     name: "Rings",
     href: "/collections?category=Rings",
     image: "/images/ring-soleil.png",
     alt: "Diamond Soleil Dome Ring",
+  },
+  {
+    name: "Necklaces",
+    href: "/collections?category=Necklaces",
+    image: "/images/necklace-diamond-line.jpg",
+    alt: "Diamond Line Necklace",
+    focal: "center 36%",
   },
   {
     name: "Bracelets",
@@ -20,12 +33,6 @@ const categories = [
     href: "/#gemstones",
     image: "/images/rings-gemstone-bands.png",
     alt: "Colored gemstone bands",
-  },
-  {
-    name: "Custom",
-    href: "/#contact",
-    image: "/images/diamond-bracelet-poster.png",
-    alt: "Diamond link bracelet",
   },
 ];
 
@@ -56,6 +63,7 @@ export function CategoryGateways() {
                     fill
                     sizes="(max-width: 640px) 45vw, 220px"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    style={{ objectPosition: item.focal ?? "center" }}
                   />
                 </div>
                 <span className="type-category mt-4 text-charcoal">

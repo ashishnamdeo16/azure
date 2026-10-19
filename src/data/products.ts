@@ -19,6 +19,10 @@ export type Product = {
   featured: boolean;
   images: string[];
   alt: string;
+  /** CSS object-position so the jewelry stays in frame when the photo is cropped. */
+  focal?: string;
+  /** Tall studio photos should keep a portrait frame on the piece page. */
+  portrait?: boolean;
 };
 
 export const products: Product[] = [
@@ -37,6 +41,72 @@ export const products: Product[] = [
     featured: true,
     images: ["/images/ring-soleil.png"],
     alt: "Soleil Dome Ring by Azure Jewelry — diamond pavé sunburst ring on a reflective black surface",
+  },
+  {
+    id: "champagne-halo-ring",
+    slug: "champagne-halo-ring",
+    name: "Champagne Halo Ring",
+    category: "Rings",
+    gemstone: "Champagne Diamond",
+    description:
+      "A cushion-cut champagne diamond held in a halo of white diamonds, with pavé continuing down the shoulders. Warm color at the center, bright light around it.",
+    craftsmanship:
+      "The center stone sits in a white-metal frame of round diamonds. Pavé on the band carries that light toward the finger, so the halo reads as one continuous field.",
+    collection: "Signature",
+    featured: true,
+    images: ["/images/ring-champagne-halo.jpg"],
+    alt: "Champagne Halo Ring by Azure Jewelry — cushion-cut champagne diamond with a white diamond halo",
+    focal: "center 48%",
+  },
+  {
+    id: "wave-pave-ring",
+    slug: "wave-pave-ring",
+    name: "Wave Pavé Ring",
+    category: "Rings",
+    gemstone: "Diamond",
+    description:
+      "An undulating band of warm gold, each rise and fall covered in pavé-set diamonds. The silhouette moves like a wave around the finger.",
+    craftsmanship:
+      "Repeating arches are fully pavé-set. The metal shows only as a warm line beneath the stones, so the surface reads as continuous light.",
+    collection: "Signature",
+    featured: true,
+    images: ["/images/ring-wave-pave.jpg"],
+    alt: "Wave Pavé Ring by Azure Jewelry — undulating gold band fully set with pavé diamonds",
+    focal: "center 50%",
+  },
+  {
+    id: "spectrum-pear-necklace",
+    slug: "spectrum-pear-necklace",
+    name: "Spectrum Pear Necklace",
+    category: "Necklaces",
+    gemstone: "Fancy Color Diamond",
+    description:
+      "Pear-shaped links, each centered with a colored diamond — champagne, pink, yellow, and white — and framed by smaller white diamonds. Warm and cool metal alternate along the line.",
+    craftsmanship:
+      "Each pear link is set on its own, with a colored center and a diamond surround. The links join into a necklace that follows the line of the neck.",
+    collection: "High Jewelry",
+    featured: true,
+    images: ["/images/necklace-fancy-color.jpg"],
+    alt: "Spectrum Pear Necklace by Azure Jewelry — pear-shaped links with champagne, pink, yellow, and white diamonds",
+    focal: "center 48%",
+    portrait: true,
+  },
+  {
+    id: "diamond-line-necklace",
+    slug: "diamond-line-necklace",
+    name: "Diamond Line Necklace",
+    category: "Necklaces",
+    gemstone: "Diamond",
+    description:
+      "A single line of round diamonds in warm gold, resting close to the collarbone. A classic necklace, quiet in form and bright in light.",
+    craftsmanship:
+      "Round diamonds are set in a continuous line on a warm-gold chain, proportioned to sit evenly against the neck.",
+    collection: "Signature",
+    featured: true,
+    images: ["/images/necklace-diamond-line.jpg"],
+    alt: "Diamond Line Necklace by Azure Jewelry — round diamonds set in a warm gold line on a black bust",
+    focal: "center 32%",
+    portrait: true,
   },
   {
     id: "azure-sapphire-cuff",

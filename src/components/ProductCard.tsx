@@ -34,6 +34,7 @@ export function ProductCard({
               : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           }
           className="img-zoom object-cover"
+          style={{ objectPosition: product.focal ?? "center" }}
           priority={priority}
         />
         {product.certification && (

@@ -1,10 +1,21 @@
 import Link from "next/link";
-import { getFeaturedProducts } from "@/data/products";
+import { getProductBySlug } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
 
+const previewSlugs = [
+  "soleil-dome-ring",
+  "spectrum-pear-necklace",
+  "champagne-halo-ring",
+  "diamond-line-necklace",
+  "wave-pave-ring",
+  "azure-sapphire-cuff",
+];
+
 export function FeaturedPieces() {
-  const featured = getFeaturedProducts();
+  const featured = previewSlugs
+    .map((slug) => getProductBySlug(slug))
+    .filter((product) => product !== undefined);
 
   return (
     <section className="bg-ivory-warm py-12 md:py-16">
@@ -20,7 +31,7 @@ export function FeaturedPieces() {
         </Reveal>
 
         <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {featured.slice(0, 3).map((product, i) => (
+          {featured.map((product, i) => (
             <Reveal key={product.id} delay={(i % 3) as 0 | 1 | 2}>
               <ProductCard product={product} priority={i === 0} />
             </Reveal>

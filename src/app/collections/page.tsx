@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/site";
 
 const title = "Fine Jewelry Collections";
 const description =
-  "Explore Azure Jewelry collections of rings, bracelets, and gemstone pieces. Each work is available by private inquiry via WhatsApp or phone.";
+  "Explore Azure Jewelry collections of rings, necklaces, bracelets, and gemstone pieces. Each work is available by private inquiry via WhatsApp or phone.";
 
 export const metadata: Metadata = {
   title,

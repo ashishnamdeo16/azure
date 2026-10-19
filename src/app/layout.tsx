@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileContactBar } from "@/components/MobileContactBar";
@@ -12,17 +12,18 @@ import {
 } from "@/lib/seo";
 import "./globals.css";
 
-const serif = Cormorant_Garamond({
+const serif = localFont({
+  src: "../../node_modules/@fontsource-variable/cormorant-garamond/files/cormorant-garamond-latin-wght-normal.woff2",
   variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: "400 600",
   display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
 
-const sans = Outfit({
+const sans = localFont({
+  src: "../../node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2",
   variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "300 700",
   display: "swap",
 });
 

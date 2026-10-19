@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { cn } from "@/lib/utils";
 import {
   getProductBySlug,
   products,
@@ -122,7 +123,12 @@ export default async function PiecePage({ params }: PiecePageProps) {
 
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7">
-            <div className="relative aspect-[4/5] bg-azure-deep md:aspect-[5/4]">
+            <div
+              className={cn(
+                "relative bg-azure-deep",
+                product.portrait ? "aspect-[4/5]" : "aspect-[4/5] md:aspect-[5/4]"
+              )}
+            >
               <Image
                 src={product.images[0]}
                 alt={product.alt}
@@ -130,6 +136,7 @@ export default async function PiecePage({ params }: PiecePageProps) {
                 priority
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 className="object-cover"
+                style={{ objectPosition: product.focal ?? "center" }}
               />
             </div>
           </div>
