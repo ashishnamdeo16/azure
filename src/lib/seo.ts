@@ -7,7 +7,8 @@ export const imageDimensions: Record<string, { width: number; height: number }> 
     "/images/ring-soleil.png": { width: 1024, height: 856 },
     "/images/bracelet-sapphire.png": { width: 996, height: 1024 },
     "/images/rings-gemstone-bands.png": { width: 1024, height: 472 },
-    "/images/logo.png": { width: 945, height: 945 },
+    "/images/logo-on-light.png": { width: 668, height: 445 },
+    "/images/logo-on-dark.png": { width: 653, height: 437 },
     "/images/diamond-bracelet-poster.png": { width: 480, height: 480 },
   };
 
@@ -30,7 +31,7 @@ export function getSameAs(): string[] {
 
 export function organizationJsonLd() {
   const sameAs = getSameAs();
-  const logo = absoluteImageUrl("/images/logo.png");
+  const logo = absoluteImageUrl("/images/logo-on-light.png");
 
   return {
     "@context": "https://schema.org",

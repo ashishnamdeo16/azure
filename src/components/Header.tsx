@@ -218,31 +218,19 @@ function BrandLink({
     <Link
       href="/"
       onClick={onClick}
-      className="flex min-w-0 items-center gap-2.5"
+      className="flex min-w-0 items-center"
       aria-label="Azure Jewelry home"
     >
-      <Image
-        src="/images/logo.png"
-        alt=""
-        width={44}
-        height={44}
-        className="h-8 w-8 shrink-0 object-contain md:h-9 md:w-9"
-        priority
-      />
-      <span className="flex min-w-0 flex-col leading-none">
-        <span
-          className={cn("type-brand", onDark ? "text-ivory" : "text-charcoal")}
-        >
-          Azure
-        </span>
-        <span
-          className={cn(
-            "type-brand-sub mt-1",
-            onDark ? "text-ivory/70" : "text-muted"
-          )}
-        >
-          Jewelry
-        </span>
+      <span className="flex h-11 items-center md:h-12 lg:h-[4.25rem]">
+        <Image
+          src={onDark ? "/images/logo-on-dark.png" : "/images/logo-on-light.png"}
+          alt="Azure Jewelry"
+          width={onDark ? 653 : 668}
+          height={onDark ? 437 : 445}
+          className="h-full w-auto"
+          style={{ width: "auto", height: "100%" }}
+          priority
+        />
       </span>
     </Link>
   );

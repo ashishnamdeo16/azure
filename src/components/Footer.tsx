@@ -59,22 +59,17 @@ export function Footer() {
           <div className="md:col-span-5">
             <Link
               href="/"
-              className="group inline-flex items-center gap-3 transition-opacity duration-300 hover:opacity-90"
+              className="group inline-flex transition-opacity duration-300 hover:opacity-90"
             >
-              <Image
-                src="/images/logo.png"
-                alt="Azure Jewelry"
-                width={48}
-                height={48}
-                className="h-12 w-12 object-contain transition-transform duration-500 ease-out group-hover:scale-105"
-              />
-              <span className="flex flex-col leading-none">
-                <span className="type-brand text-ivory transition-colors duration-300 group-hover:text-champagne">
-                  Azure
-                </span>
-                <span className="type-brand-sub mt-1 text-ivory/60 transition-colors duration-300 group-hover:text-ivory/80">
-                  Jewelry
-                </span>
+              <span className="flex h-16 items-center md:h-20">
+                <Image
+                  src="/images/logo-on-dark.png"
+                  alt="Azure Jewelry"
+                  width={653}
+                  height={437}
+                  className="h-full w-auto transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+                  style={{ width: "auto", height: "100%" }}
+                />
               </span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-ivory/65">
