@@ -23,16 +23,17 @@ const categories: {
     focal: "center 36%",
   },
   {
+    name: "Earrings",
+    href: "/collections?category=Earrings",
+    image: "/images/earrings-arabesque-pearl.jpg",
+    alt: "Arabesque Pearl Earrings",
+    focal: "center 52%",
+  },
+  {
     name: "Bracelets",
     href: "/collections?category=Bracelets",
     image: "/images/bracelet-sapphire.png",
     alt: "Azure Sapphire Cuff",
-  },
-  {
-    name: "Gemstones",
-    href: "/#gemstones",
-    image: "/images/rings-gemstone-bands.png",
-    alt: "Colored gemstone bands",
   },
 ];
 

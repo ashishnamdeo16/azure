@@ -33,12 +33,12 @@ export function SocialLinks({
   const showContact = channels === "all" || channels === "contact";
   const showSocial = channels === "all" || channels === "social";
 
-  const itemClass = cn(
-    "inline-flex h-10 w-10 items-center justify-center rounded-sm transition-all duration-300",
-    onDark
-      ? "text-ivory/85 hover:scale-110 hover:bg-ivory/10 hover:text-champagne"
-      : "text-charcoal/80 hover:scale-110 hover:bg-charcoal/5 hover:text-azure"
-  );
+  const itemFrame =
+    "inline-flex h-10 w-10 items-center justify-center rounded-sm transition-all duration-300 hover:scale-110";
+  const itemTone = onDark
+    ? "text-ivory/85 hover:bg-ivory/10 hover:text-champagne"
+    : "text-charcoal/80 hover:bg-charcoal/5 hover:text-azure";
+  const itemClass = cn(itemFrame, itemTone);
 
   return (
     <div className={cn("flex items-center gap-0.5", className)}>
@@ -47,7 +47,10 @@ export function SocialLinks({
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className={itemClass}
+          className={cn(
+            itemFrame,
+            "text-whatsapp hover:bg-whatsapp/10 hover:text-whatsapp"
+          )}
           aria-label="WhatsApp Azure Jewelry"
         >
           <WhatsAppIcon className={iconClassName} />
@@ -65,7 +68,7 @@ export function SocialLinks({
           href={instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className={itemClass}
+          className={cn(itemFrame, "hover:bg-[#e1306c]/10")}
           aria-label="Azure Jewelry on Instagram"
         >
           <InstagramIcon className={iconClassName} />
@@ -77,7 +80,10 @@ export function SocialLinks({
           href={facebook}
           target="_blank"
           rel="noopener noreferrer"
-          className={itemClass}
+          className={cn(
+            itemFrame,
+            "text-facebook hover:bg-facebook/10 hover:text-facebook"
+          )}
           aria-label="Azure Jewelry on Facebook"
         >
           <FacebookIcon className={iconClassName} />

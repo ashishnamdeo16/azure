@@ -75,6 +75,40 @@ export const products: Product[] = [
     focal: "center 50%",
   },
   {
+    id: "cushion-blue-dome-ring",
+    slug: "cushion-blue-dome-ring",
+    name: "Cushion Blue Dome Ring",
+    category: "Rings",
+    gemstone: "Blue Gemstone & Diamond",
+    description:
+      "A wide dome of pavé-set diamonds, centered by a cushion-cut blue gemstone in a smooth bezel. Light across the surface, color at the heart.",
+    craftsmanship:
+      "The dome is fully pavé-set in white metal. The blue center sits low in a bezel, so the diamonds read as one field around it.",
+    collection: "Signature",
+    featured: true,
+    images: ["/images/ring-cushion-blue-dome.jpg"],
+    alt: "Cushion Blue Dome Ring by Azure Jewelry — pavé diamond dome with a cushion-cut blue gemstone",
+    focal: "center 46%",
+    portrait: true,
+  },
+  {
+    id: "toi-et-moi-pearl-ring",
+    slug: "toi-et-moi-pearl-ring",
+    name: "Toi et Moi Pearl Ring",
+    category: "Rings",
+    gemstone: "Pearl & Diamond",
+    description:
+      "Two pearls set side by side — one dark, one white — joined by a ribbon of pavé diamonds. A toi-et-moi ring, built on contrast.",
+    craftsmanship:
+      "Each pearl is held at the shoulder by a diamond-set arc. The two colors sit together as one composition.",
+    collection: "Signature",
+    featured: true,
+    images: ["/images/ring-toi-et-moi-pearl.jpg"],
+    alt: "Toi et Moi Pearl Ring by Azure Jewelry — a dark pearl and a white pearl joined by pavé diamonds",
+    focal: "center 48%",
+    portrait: true,
+  },
+  {
     id: "spectrum-pear-necklace",
     slug: "spectrum-pear-necklace",
     name: "Spectrum Pear Necklace",
@@ -106,6 +140,23 @@ export const products: Product[] = [
     images: ["/images/necklace-diamond-line.jpg"],
     alt: "Diamond Line Necklace by Azure Jewelry — round diamonds set in a warm gold line on a black bust",
     focal: "center 32%",
+    portrait: true,
+  },
+  {
+    id: "arabesque-pearl-earrings",
+    slug: "arabesque-pearl-earrings",
+    name: "Arabesque Pearl Earrings",
+    category: "Earrings",
+    gemstone: "Pearl & Diamond",
+    description:
+      "A pair of scrolling earrings in warm gold. The open curve is lined with pavé-set diamonds and finishes in a dark pearl drop.",
+    craftsmanship:
+      "The scroll is openwork, with small diamonds set along the outer line. A pearl hangs from the lowest point of each earring.",
+    collection: "High Jewelry",
+    featured: true,
+    images: ["/images/earrings-arabesque-pearl.jpg"],
+    alt: "Arabesque Pearl Earrings by Azure Jewelry — scrolling gold earrings with pavé diamonds and dark pearl drops",
+    focal: "center 46%",
     portrait: true,
   },
   {

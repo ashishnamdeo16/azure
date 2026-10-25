@@ -101,7 +101,7 @@ export function Footer() {
               >
                 {siteConfig.contact.location}
                 <span
-                  className="mt-2 block text-[0.625rem] uppercase tracking-[0.16em] text-ivory/40 transition-colors duration-300 group-hover:text-champagne"
+                  className="mt-2 block text-xs uppercase tracking-[0.14em] text-ivory/40 transition-colors duration-300 group-hover:text-champagne"
                 >
                   View on map
                 </span>

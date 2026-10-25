@@ -10,6 +10,9 @@ export const imageDimensions: Record<string, { width: number; height: number }> 
     "/images/logo-on-light.png": { width: 668, height: 445 },
     "/images/logo-on-dark.png": { width: 653, height: 437 },
     "/images/diamond-bracelet-poster.png": { width: 480, height: 480 },
+    "/images/ring-cushion-blue-dome.jpg": { width: 682, height: 1024 },
+    "/images/ring-toi-et-moi-pearl.jpg": { width: 682, height: 1024 },
+    "/images/earrings-arabesque-pearl.jpg": { width: 682, height: 1024 },
   };
 
 export function absoluteUrl(path = "/"): string {

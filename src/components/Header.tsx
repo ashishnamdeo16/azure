@@ -87,7 +87,7 @@ export function Header() {
           <button
             type="button"
             className={cn(
-              "flex h-11 w-11 shrink-0 items-center justify-center lg:hidden",
+              "order-last ml-auto flex h-11 w-11 shrink-0 items-center justify-center lg:hidden",
               onDark ? "text-ivory" : "text-charcoal"
             )}
             aria-expanded={open}

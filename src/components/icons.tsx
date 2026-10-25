@@ -1,3 +1,4 @@
+import { useId } from "react";
 import { cn } from "@/lib/utils";
 
 type IconProps = {
@@ -35,17 +36,34 @@ export function PhoneIcon({ className }: IconProps) {
 }
 
 export function InstagramIcon({ className }: IconProps) {
+  const gradientId = `instagram-${useId().replace(/:/g, "")}`;
+
   return (
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke={`url(#${gradientId})`}
       strokeWidth="1.75"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden
       className={cn("h-5 w-5", className)}
     >
+      <defs>
+        <linearGradient
+          id={gradientId}
+          x1="2"
+          y1="22"
+          x2="22"
+          y2="2"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0%" stopColor="#fccc63" />
+          <stop offset="35%" stopColor="#f77737" />
+          <stop offset="65%" stopColor="#e1306c" />
+          <stop offset="100%" stopColor="#833ab4" />
+        </linearGradient>
+      </defs>
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />

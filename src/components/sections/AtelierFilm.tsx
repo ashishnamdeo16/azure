@@ -102,13 +102,13 @@ export function AtelierFilm() {
                 <button
                   type="button"
                   onClick={togglePlayback}
-                  className="absolute bottom-4 right-4 flex h-11 min-w-11 items-center justify-center bg-ink/70 px-3 text-[0.625rem] font-medium uppercase tracking-[0.18em] text-ivory backdrop-blur-sm transition-opacity hover:bg-ink/85"
+                  className="absolute bottom-4 right-4 flex h-11 min-w-11 items-center justify-center bg-ink/70 px-3 text-xs font-medium uppercase tracking-[0.14em] text-ivory backdrop-blur-sm transition-opacity hover:bg-ink/85"
                   aria-label={playing ? "Pause film" : "Play film"}
                 >
                   {playing ? "Pause" : "Play"}
                 </button>
               </div>
-              <figcaption className="mt-4 text-center text-[0.6875rem] uppercase tracking-[0.18em] text-ivory/45">
+              <figcaption className="mt-4 text-center text-xs uppercase tracking-[0.16em] text-ivory/45">
                 High jewelry · Studio film
               </figcaption>
             </figure>

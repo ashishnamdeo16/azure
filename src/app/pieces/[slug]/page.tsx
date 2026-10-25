@@ -95,7 +95,7 @@ export default async function PiecePage({ params }: PiecePageProps) {
 
       <div className="container-azure">
         <nav
-          className="mb-8 text-[0.6875rem] uppercase tracking-[0.14em] text-muted"
+          className="mb-8 text-xs uppercase tracking-[0.12em] text-muted"
           aria-label="Breadcrumb"
         >
           <ol className="flex flex-wrap items-center gap-x-0">
@@ -172,7 +172,7 @@ export default async function PiecePage({ params }: PiecePageProps) {
 
             <div className="mt-8">
               <h2 className="font-serif text-xl text-charcoal">Craftsmanship</h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
+              <p className="mt-3 text-base leading-relaxed text-muted">
                 {product.craftsmanship}
               </p>
             </div>
@@ -187,7 +187,7 @@ export default async function PiecePage({ params }: PiecePageProps) {
               />
             </div>
 
-            <p className="mt-6 text-xs leading-relaxed text-muted-light">
+            <p className="mt-6 text-sm leading-relaxed text-muted-light">
               Azure Jewelry works by private inquiry. WhatsApp messages are
               pre-filled with this piece name so our team can assist you
               promptly.

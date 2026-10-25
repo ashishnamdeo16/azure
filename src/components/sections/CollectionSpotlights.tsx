@@ -57,7 +57,7 @@ export function CollectionSpotlights() {
                 />
                 <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
                   <h3 className="type-subhead text-ivory">{item.title}</h3>
-                  <span className="mt-3 inline-block text-[0.8125rem] font-medium uppercase tracking-[0.12em] text-ivory">
+                  <span className="mt-3 inline-block text-sm font-medium uppercase tracking-[0.1em] text-ivory">
                     Explore
                   </span>
                 </div>

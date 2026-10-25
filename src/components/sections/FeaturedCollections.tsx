@@ -15,7 +15,7 @@ export function FeaturedCollections() {
             </h2>
             <Link
               href="/collections"
-              className="text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-azure transition-colors hover:text-azure-soft"
+              className="text-xs font-medium uppercase tracking-[0.16em] text-azure transition-colors hover:text-azure-soft"
             >
               View All Pieces →
             </Link>

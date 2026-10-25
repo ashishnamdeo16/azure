@@ -5,8 +5,11 @@ import { Reveal } from "@/components/Reveal";
 
 const previewSlugs = [
   "soleil-dome-ring",
+  "arabesque-pearl-earrings",
   "spectrum-pear-necklace",
+  "cushion-blue-dome-ring",
   "champagne-halo-ring",
+  "toi-et-moi-pearl-ring",
   "diamond-line-necklace",
   "wave-pave-ring",
   "azure-sapphire-cuff",

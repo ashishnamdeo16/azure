@@ -17,7 +17,7 @@ export function GiaExpertise() {
               Gemological Institute of America — grounding Azure Jewelry in
               rigorous knowledge of precious and colored stones.
             </p>
-            <p className="mt-6 text-[0.6875rem] uppercase tracking-[0.18em] text-gold">
+            <p className="mt-6 text-xs uppercase tracking-[0.16em] text-gold">
               Expertise you can trust
             </p>
           </div>

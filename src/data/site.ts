@@ -32,6 +32,7 @@ export const siteConfig = {
   nav: [
     { label: "Rings", href: "/collections?category=Rings" },
     { label: "Necklaces", href: "/collections?category=Necklaces" },
+    { label: "Earrings", href: "/collections?category=Earrings" },
     { label: "Bracelets", href: "/collections?category=Bracelets" },
     { label: "Gemstones", href: "/#gemstones" },
     { label: "Custom", href: "/#contact" },
@@ -54,6 +55,8 @@ export const siteConfig = {
         { label: "Soleil Dome Ring", href: "/pieces/soleil-dome-ring" },
         { label: "Champagne Halo Ring", href: "/pieces/champagne-halo-ring" },
         { label: "Wave Pavé Ring", href: "/pieces/wave-pave-ring" },
+        { label: "Cushion Blue Dome Ring", href: "/pieces/cushion-blue-dome-ring" },
+        { label: "Toi et Moi Pearl Ring", href: "/pieces/toi-et-moi-pearl-ring" },
         { label: "Emerald Cascade Band", href: "/pieces/emerald-cascade-band" },
         { label: "Tricolor Gemstone Band", href: "/pieces/tricolor-gemstone-band" },
         { label: "Magenta Pavé Band", href: "/pieces/magenta-pave-band" },
@@ -73,6 +76,14 @@ export const siteConfig = {
         { label: "All Necklaces", href: "/collections?category=Necklaces" },
         { label: "Spectrum Pear Necklace", href: "/pieces/spectrum-pear-necklace" },
         { label: "Diamond Line Necklace", href: "/pieces/diamond-line-necklace" },
+      ],
+    },
+    {
+      label: "Earrings",
+      href: "/collections?category=Earrings",
+      links: [
+        { label: "All Earrings", href: "/collections?category=Earrings" },
+        { label: "Arabesque Pearl Earrings", href: "/pieces/arabesque-pearl-earrings" },
       ],
     },
     {
@@ -105,6 +116,8 @@ export const siteConfig = {
         { label: "Sapphire & Diamond", href: "/collections?gemstone=Sapphire+%26+Diamond" },
         { label: "Emerald", href: "/collections?gemstone=Emerald" },
         { label: "Pink Sapphire", href: "/collections?gemstone=Pink+Sapphire" },
+        { label: "Pearl & Diamond", href: "/collections?gemstone=Pearl+%26+Diamond" },
+        { label: "Blue Gemstone & Diamond", href: "/collections?gemstone=Blue+Gemstone+%26+Diamond" },
         { label: "Multi-Stone", href: "/collections?gemstone=Multi-Stone" },
       ],
     },

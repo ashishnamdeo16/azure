@@ -38,7 +38,7 @@ export function ProductCard({
           priority={priority}
         />
         {product.certification && (
-          <span className="absolute left-4 top-4 bg-ivory/95 px-3 py-1.5 text-[0.625rem] font-medium uppercase tracking-[0.14em] text-charcoal">
+          <span className="absolute left-4 top-4 bg-ivory/95 px-3 py-1.5 text-xs font-medium uppercase tracking-[0.12em] text-charcoal">
             {product.certification}
           </span>
         )}
@@ -60,7 +60,7 @@ export function ProductCard({
         </p>
         <Link
           href={`/pieces/${product.slug}`}
-          className="mt-4 text-[0.6875rem] uppercase tracking-[0.14em] text-gold transition-colors hover:text-azure"
+          className="mt-4 text-xs uppercase tracking-[0.12em] text-gold transition-colors hover:text-azure"
         >
           View details
         </Link>

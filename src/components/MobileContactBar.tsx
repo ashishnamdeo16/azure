@@ -24,7 +24,7 @@ export function MobileContactBar() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex min-h-14 items-center justify-center gap-2 text-sm font-medium tracking-wide text-azure"
+            className="flex min-h-14 items-center justify-center gap-2 text-sm font-medium tracking-wide text-whatsapp"
           >
             <WhatsAppIcon className="h-4 w-4" />
             WhatsApp
@@ -32,7 +32,7 @@ export function MobileContactBar() {
         ) : (
           <Link
             href="/#contact"
-            className="flex min-h-14 items-center justify-center gap-2 text-sm font-medium tracking-wide text-azure"
+            className="flex min-h-14 items-center justify-center gap-2 text-sm font-medium tracking-wide text-whatsapp"
           >
             <WhatsAppIcon className="h-4 w-4" />
             WhatsApp

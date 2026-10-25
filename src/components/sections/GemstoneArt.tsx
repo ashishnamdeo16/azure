@@ -63,7 +63,7 @@ export function GemstoneArt() {
           {journey.map((step, index) => (
             <Reveal key={step.title} delay={(index % 3) as 0 | 1 | 2}>
               <div className="process-step border-t border-line-light pt-6">
-                <p className="text-[0.6875rem] tracking-[0.2em] text-champagne">
+                <p className="text-xs tracking-[0.18em] text-champagne">
                   {String(index + 1).padStart(2, "0")}
                 </p>
                 <h3 className="type-subhead mt-3 text-ivory">
